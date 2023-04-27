@@ -1,0 +1,47 @@
+    <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+        <g id="triangle">
+            <title _mstTextHash="68237" _mstHash="771">Layer 1</title>
+            <!-- <line id="svg_23" y2="74.90774" x2="422.87927" y1="74.90774" x1="359.04057" stroke="#000" fill="none"/>
+
+            <line id="svg_10" y2="74.99868" x2="359.25661" y1="481.47874" x1="124.07224" stroke="#000" fill="none"/>
+            <line id="svg_16" y2="426.8493" x2="496.29317" y1="186.1094" x1="359.25661" stroke="#000" fill="none"/>
+            <line id="svg_17" y2="185.64644" x2="359.71957" y1="537.0341" x1="156.01658" stroke="#000" fill="none"/>
+            <line id="svg_20" y2="536.92775" x2="156.20891" y1="481.04542" x1="124.50958" stroke="#000" fill="none"/>
+            <line id="svg_12" y2="426.38634" x2="562.9596" y1="426.38634" x1="285.18279" stroke="#000" fill="none"/>
+            <line id="svg_11" y2="426.38634" x2="561.57072" y1="74.53572" x1="359.25661" stroke="#000" fill="none"/>
+
+            <line id="svg_21" y2="242.43541" x2="391.14389" y1="480.81178" x1="253.13651" stroke="#000" fill="none"/>
+            <line stroke="#000" id="svg_24" y2="74.74912" x2="422.33144" y1="481.74272" x1="657.67632" fill="none"/>
+            <line id="svg_26" y2="480.34203" x2="657.42065" y1="480.34203" x1="252.85295" stroke="#000" fill="none"/>
+            <line id="svg_27" y2="537.34437" x2="626.14398" y1="537.34437" x1="156.01658" stroke="#000" fill="none"/>
+            <line id="svg_29" y2="481.34713" x2="657.25385" y1="537.30567" x1="625.90671" stroke="#000" fill="none"/> -->
+
+
+            <path fill="url(#grad1)" opacity="NaN" d="m124.78554,482.14218c0,0 30.99998,53.49996 30.99998,53.49996c0,0 202.99985,-348.49975 202.99985,-348.49975c0,0 136.9999,239.99983 136.9999,239.99983c0,0 66.49995,0.5 66.49995,0.5c0,0 -204.99985,-351.49975 -203.49985,-351.49975c1.5,0 -233.99983,405.99971 -233.99983,405.99971z" id="svg_2"/>
+            <path fill="url(#grad2)" opacity="NaN" d="m157.15686,536.23355c0,0 468.71793,1.53846 468.71793,1.53846c0,0 30.76923,-56.92308 30.76923,-56.92308c0,0 -403.58973,0 -403.58973,0c0,0 137.43589,-237.43589 137.43589,-237.43589c0,0 -31.28205,-55.38461 -31.28205,-55.38461c0,0 -202.05128,348.20512 -202.05128,348.20512l0.00001,0z" id="svg_5"/>
+            <path id="svg_3" d="m284.70649,426.88328c0,0 277.49999,-0.5 277.49999,-0.5c0,0 -202.49999,-351.49999 -202.49999,-351.49999c0,0 62,1 62,1c0,0 234.49999,403.99999 234.49999,403.99999c0,0 -402.49999,0.5 -402.49999,0.5c0,0 31,-53.5 31,-53.5z" 
+                opacity="NaN" fill="url(#grad3)"/>
+        
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(254, 237, 255);stop-opacity:1" />
+                    <stop offset="25%" style="stop-color:rgb(238, 255, 144);stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:rgb(255, 179, 214);stop-opacity:1" />
+                    <stop offset="95%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(254, 237, 255);stop-opacity:1" />
+                    <stop offset="25%" style="stop-color:rgb(238, 255, 144);stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:rgb(255, 179, 214);stop-opacity:1" />
+                    <stop offset="95%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(254, 237, 255);stop-opacity:1" />
+                    <stop offset="25%" style="stop-color:rgb(238, 255, 144);stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:rgb(255, 179, 214);stop-opacity:1" />
+                    <stop offset="95%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                </linearGradient>
+
+            </defs>
+        </g>
+    </svg>
