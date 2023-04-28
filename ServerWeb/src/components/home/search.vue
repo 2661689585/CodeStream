@@ -1,7 +1,7 @@
 <template>
     <div class="frame_search">
         <input  type="search" 
-                placeholder="这是一个搜索框"  
+                placeholder="这是一个搜索框" 
                 @focus="focusMsg($event,'focus')" 
                 @blur = "focusMsg($event,'blur')"
                 ref="searchOBJ"/>
@@ -38,13 +38,17 @@
         font-size: 1.4em;
         border-radius: 12px;
         background: url('../../public/search.png') no-repeat;
-        /* 4.5% */
         background-size: 1.6vw;
         background-position: 0.6vw 50%;
-        background-color: #000000e8;
+        background-color: var(--search-color);
         border: 0;
         outline: none;
-        color: #f8f8f8;
+        color: var(--font-color);
         padding: 0 1em 0 2.4em;
+        box-shadow: 0 0 0.2em #ffffff09;
+    }
+
+    input::-webkit-input-placeholder{
+        color:var(--font-color);
     }
 </style>

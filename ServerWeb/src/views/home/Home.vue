@@ -14,8 +14,20 @@
                 <div class="content_left_head display">
                     <p>CodeStream</p>
                 </div>
+                <!-- 侧边栏 -->
                 <div class="content_left_content display">
-                    
+                    <div class="content_left_body display">
+                        <!-- 考虑是否搞成组件 -->
+                        <div class="home_sidebar display" v-for="item,key in sidebar" :key="item.id">
+                            <p>{{ item.title }}</p>
+                            <ul>
+                                <li v-for="(itemli) in item.list">
+                                    123
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -64,8 +76,7 @@
 <script setup lang="ts">
     import search from '../../components/home/search.vue'
     import BW from '../../components/home/BW.vue'
-    import { ref,onMounted,onBeforeUnmount } from 'vue' 
-
+    import { ref,Ref,onMounted,onBeforeUnmount } from 'vue' 
 
     onMounted(()=>{
         document.addEventListener('click',clickImg);
@@ -73,6 +84,22 @@
     onBeforeUnmount(()=>{
         document.addEventListener('click',clickImg)
     })
+
+    interface SidebarItem {
+        id: number;
+        title: string;
+        list: Array<string>;
+    }
+
+    const sidebar:Ref<Array<SidebarItem>>= ref([{
+        'id'    : 0 ,
+        'title' : 'one',
+        'list'  : ['item1','item','itme']
+    },{
+        'id'    : 1 ,
+        'title' : 'two',
+        'list'  : ['item1','item','itme']
+    }])
 
     const headPortrait = ref();
     const headPortraitIMG = ref();
@@ -92,17 +119,14 @@
 </script>
 
 <style>
-    body{
-        color: white;
-        font-weight: bold;
-        font-family: '../../../public/font/Ubuntu/Ubuntu-Medium.ttf';
-    }
-
     :root{
-        --Left-BG:#0000004d;
-        --Content-BG:#0000004d;
+        --Left-BG:#0000006e;
+        --Content-BG:#0000006e;
         --Tab-BG: rgb(36, 36, 36);
         --border-color:#ffffff2f;
+        --search-color:#00000085;
+        --font-color:#e9e9e9d7;
+        --filter-brightness:120%;
     }
 
     /* 居中用的 */
@@ -124,32 +148,35 @@
         height: 100%;
         object-fit: cover;
         /* filter:invert(100%) hue-rotate(120deg); */
-        filter:brightness(120%);
+        filter:brightness( var(--filter-brightness) );
     }
 
     /* 内容 */
     .frame{
         width: 100%;
         min-height: 100vh;
-        }
+    }
     .frame_content{
         width: 97%;
         height: 95vh;
         display: flex;
         border-radius: 10px;
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(1em);
     }
      /* 最左边 */
     .content_left{
         width: 15%;
+        height: 95vh;
         border-radius: 10px 0 0 10px;
         background-color: var(--Left-BG);
         display: flex;
         flex-direction: column;
+        transition: all 0.5s;
     }
     .content_left_head {
-        padding: 0.5em 0;
-        font-size: 2em;
+        width: 100%;
+        height: 8.7%;
+        font-size: 1.6em;
         font-weight: bold;
         background-image: linear-gradient(45deg,#fdbeff,#ffbdbd,#fffbbd);
         animation: text 10s infinite linear;
@@ -163,6 +190,28 @@
         height: 100%;
         border-right: 1px solid var(--border-color);
     }
+    .content_left_body{
+        width: 90%;
+        height: 95%;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .home_sidebar{
+        width: 100%;
+        margin: 0 0 10% 0;
+        flex-direction: column;
+        font-size: 1.2em;
+        align-items: start;
+    }
+    .home_sidebar p {
+        position: relative;
+        padding: 5% 0;
+        left: 10%;
+    }
+    .home_sidebar ul{
+        position: relative;
+        left: 16%;
+    }
 
 
     
@@ -173,6 +222,8 @@
         border-radius:0 10px 10px 0;
         background-color: var(--Content-BG);
         align-items: start;
+        transition: all 0.5s;
+
     }
     /* 中间内容区域的最上面区域 */
     .content_top{
@@ -230,6 +281,7 @@
     li {
         list-style: none;
         padding: 10px 0;
+        color: var(--font-color);
     }
 
     /* 字的渐变 */
